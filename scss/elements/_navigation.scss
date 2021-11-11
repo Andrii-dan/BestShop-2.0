@@ -13,16 +13,15 @@
 	.container {
 		width: 100%;
 		padding: 0 15px;
-        position: fixed;
 	}
 }
 
 .menu {
 	position: absolute;
-	bottom: -6.2rem;
+	bottom: -10.1rem;
 	left: 0;
 	width: 100%;
-	height: 6rem;
+	height: 10rem;
 	display: none;
 	background: $color-white;
 	@media screen and (min-width: $tablet) {

@@ -1,31 +1,34 @@
 * {
 	box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
 	font-family: $font-open-sans;
-  height: 2000px;
-  }
-  
-  a {
+	height: 2000px;
+}
+
+a {
 	text-decoration: none;
-  }
-  
-  h2 {
+}
+
+h2 {
 	font-family: $font-raleway;
 	font-size: 2.25rem;
-  }
-  
-  .container {
+}
+
+.container {
 	width: 1352px;
 	margin: 0 auto;
-  }
-  
-  
-  .logo {
+}
+
+.logo {
 	font-family: $font-raleway;
 	font-size: 2rem;
 	font-weight: 300;
 	color: $main-color;
-  }
-  
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+}

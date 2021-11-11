@@ -1,11 +1,11 @@
-// Breakpoints 
+// Breakpoints
 $mobile: 600px;
 $tablet: 768px;
 $laptop: 992px;
 $desktop: 1200px;
-// / 
+// /
 
-// Colors 
+// Colors
 $main-color: #08a6e4;
 $main-color-shadow: rgba(7, 172, 230, 0.16);
 $color-red: #fb3b64;
@@ -16,22 +16,27 @@ $color-grey: #a5a5a5;
 $color-light-grey: #f7f7f7;
 $color-border-grey: #e8e9ed;
 $color-form-grey: rgba(149, 152, 154, 0.5);
-// / 
+// /
 
-// Fonts 
+// Fonts
 $font-raleway: 'Raleway', sans-serif;
 $font-open-sans: 'Open Sans', sans-serif;
-// / 
+// /
 
-
-// Flex-Box 
+// Flex-Box
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-// / 
+// /
 
-// Padding 
+@mixin mobile {
+	@media screen and (max-width: $mobile) {
+		@content;
+	}
+}
+
+// Padding
 $base-padding: 1.5rem;
-// / 
+// /
