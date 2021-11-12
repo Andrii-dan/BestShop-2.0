@@ -1,0 +1,90 @@
+.stat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__title {
+		color: $color-black;
+		font-family: $font-raleway;
+		font-weight: 400;
+		font-size: 2.25rem;
+		margin: 100px 0;
+		@include tablet {
+			text-align: center;
+		}
+		@include mobile {
+			text-align: center;
+			margin: 70px 0;
+		}
+	}
+
+	&__cnt {
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 120px;
+		@include tablet {
+			flex-wrap: wrap;
+		}
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+
+	&__info {
+		@include tablet {
+			padding-bottom: 25px;
+		}
+	}
+
+	&__icon {
+		height: 60px;
+		position: relative;
+	}
+
+	&__icon::before {
+		content: ' ';
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	&__icon--red::before {
+		background: $color-red;
+	}
+
+	&__icon--blue::before {
+		background: $main-color;
+	}
+
+	&__icon--green::before {
+		background: $color-green;
+	}
+
+	&__numbers {
+		width: 100%;
+		font-size: 1.25rem;
+		font-weight: 800;
+		line-height: 3em;
+		padding: 0 10px;
+		letter-spacing: 6px;
+		text-align: center;
+	}
+
+	&__img {
+		position: relative;
+		top: 50%;
+		left: 45%;
+		transform: translate(0, -50%);
+	}
+
+	&__description {
+		text-align: center;
+		color: $color-grey;
+		font-family: $font-raleway;
+	}
+}

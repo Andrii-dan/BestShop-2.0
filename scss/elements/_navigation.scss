@@ -65,10 +65,6 @@
 			padding: 0 2px;
 		}
 
-		&:hover {
-			color: $color-black;
-			font-weight: bold;
-		}
 		&:hover::before {
 			content: ' ';
 			display: inline-block;
@@ -81,6 +77,11 @@
 			@media screen and (max-width: $tablet) {
 				display: none;
 			}
+		}
+
+		&:hover {
+			color: $color-black;
+			font-weight: bold;
 		}
 	}
 }
