@@ -37,6 +37,12 @@ $font-open-sans: 'Open Sans', sans-serif;
 	}
 }
 
+@mixin tablet {
+	@media screen and (max-width: $tablet) {
+		@content;
+	}
+}
+
 // Padding
 $base-padding: 1.5rem;
 // /

@@ -1,14 +1,12 @@
 .banner {
-	// max-width: 1626px;
-	// margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    overflow: hidden;
-    @include mobile {
-        height: 100vh;
-    }
+	overflow: hidden;
+	@include mobile {
+		height: 100vh;
+	}
 
 	&__title {
 		margin-top: 130px;
@@ -18,7 +16,7 @@
 		font-size: 49px;
 		font-weight: 400;
 		@include mobile {
-			margin-top: 100px;
+			margin-top: 50px;
 		}
 	}
 
@@ -43,13 +41,19 @@
 		padding: 20px 150px;
 		border-radius: 40px;
 		box-shadow: $main-color-shadow;
+		@include mobile {
+			padding: 20px 70px;
+		}
 	}
 
 	&__img {
 		width: 100%;
-		height: auto; 
-        @include mobile {
-			width: 200%;
-		}         
+		height: auto;
+		@include tablet {
+			width: 170%;
+		}
+		@include mobile {
+			width: 220%;
+		}
 	}
 }
