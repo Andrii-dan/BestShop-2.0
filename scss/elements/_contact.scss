@@ -1,0 +1,143 @@
+.contact {
+	&__container {
+		margin: 0 auto;
+		width: 896px;
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 150px;
+		@include laptop {
+			padding: 100px 15px;
+		}
+		@include tablet {
+			max-width: 560px;
+			flex-direction: column;
+			align-items: center;
+		}
+		@include mobile {
+			max-width: 100%;
+		}
+	}
+	&__info {
+		@include tablet {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 0 15px 25px 15px;
+		}
+	}
+	&__title {
+		font-family: $font-raleway;
+		font-weight: normal;
+		font-size: 49px;
+		// line-height: 2em;
+	}
+
+	&__text {
+		font-family: $font-open-sans;
+		font-weight: normal;
+		font-size: 16px;
+		padding: 20px 0 40px 0;
+	}
+
+	&__details {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__email,
+	&__phone {
+		font-family: $font-open-sans;
+		font-weight: normal;
+		font-size: 16px;
+		color: $color-grey;
+		padding-right: 20px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		@include tablet {
+			width: 100%;
+			padding: 0px 8px;
+		}
+
+		.form__name,
+		.form__email {
+			display: flex;
+			flex-direction: column;
+		}
+		.form__label {
+			font-family: $font-open-sans;
+			font-weight: bold;
+			font-size: 11px;
+			letter-spacing: 3px;
+			color: $main-color;
+			text-transform: uppercase;
+			margin-top: 20px;
+		}
+		.form__input {
+			width: 440px;
+			border: none;
+			border-bottom: 1px solid $color-form-grey;
+			line-height: 2.5em;
+			margin-bottom: 10px;
+			@include tablet {
+				width: 100%;
+			}
+			@include mobile {
+				max-width: 100%;
+				padding: 0px 8px;
+			}
+		}
+
+		.form__checkbox {
+			width: 440px;
+			margin: 20px 0;
+			display: flex;
+			cursor: pointer;
+			@include tablet {
+				width: 100%;
+			}
+			@include mobile {
+				max-width: 100%;
+				padding: 0px 8px;
+			}
+		}
+
+		.checkbox__input {
+			appearance: none;
+			width: 24px;
+			height: 24px;
+			border: 1px solid $color-form-grey;
+			border-radius: 4px;
+			flex-shrink: 0;
+			margin-right: 7px;
+			cursor: pointer;
+		}
+
+		.checkbox__text {
+			font-family: $font-open-sans;
+			font-weight: normal;
+			font-size: 12px;
+			color: $color-form-grey;
+		}
+
+		.checkbox__input:checked {
+			background: url(../assets/checkmark.svg) center no-repeat;
+		}
+
+		.button {
+			width: 225px;
+			height: 60px;
+			align-self: flex-end;
+			background: $main-color;
+			color: $color-white;
+			border: none;
+			border-radius: 35px;
+			box-shadow: 5px 10px 14px $main-color-shadow;
+			@include tablet {
+				align-self: center;
+			}
+		}
+	}
+}
