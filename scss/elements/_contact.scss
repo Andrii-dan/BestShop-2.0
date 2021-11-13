@@ -4,9 +4,9 @@
 		width: 896px;
 		display: flex;
 		justify-content: space-around;
-		margin-bottom: 150px;
+		margin-bottom: 60px;
 		@include laptop {
-			padding: 100px 15px;
+			padding: 100px 15px 0px 15px;
 		}
 		@include tablet {
 			max-width: 560px;
@@ -14,6 +14,7 @@
 			align-items: center;
 		}
 		@include mobile {
+			margin-bottom: 40px;
 			max-width: 100%;
 		}
 	}
@@ -100,7 +101,6 @@
 			}
 			@include mobile {
 				max-width: 100%;
-				padding: 0px 8px;
 			}
 		}
 

@@ -1,0 +1,31 @@
+.footer {
+	background: $color-white;
+	box-shadow: 0px -5px 40px rgba(165, 165, 165, 0.5);
+	padding: 15px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	&__logo {
+		font-family: $font-raleway;
+		font-weight: 300;
+		color: $main-color;
+		font-size: 26px;
+		line-height: 2em;
+	}
+	&__copyright {
+		font-family: $font-open-sans;
+		font-size: 11px;
+		color: $color-grey;
+	}
+	&__icon {
+		padding-right: 7px;
+	}
+}
