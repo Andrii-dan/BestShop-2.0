@@ -51,6 +51,7 @@
 		}
 	}
 	a {
+		position: relative;
 		font-family: $font-open-sans;
 		font-weight: bold;
 		font-size: 0.7rem;
@@ -59,10 +60,9 @@
 		letter-spacing: 0.3em;
 		transition: 0.3s;
 		line-height: 1.2rem;
-		position: relative;
 		@media screen and (min-width: $tablet) {
 			margin: 0 $base-padding;
-			padding: 0 2px;
+			padding: 0 5px;
 		}
 
 		&:hover::before {
