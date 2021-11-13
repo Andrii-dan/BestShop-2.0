@@ -2,7 +2,6 @@
 $mobile: 776px;
 $tablet: 992px;
 $laptop: 1300px;
-$desktop: 1200px;
 // /
 
 // Colors
@@ -42,7 +41,6 @@ $font-open-sans: 'Open Sans', sans-serif;
 		@content;
 	}
 }
-
 
 @mixin laptop {
 	@media screen and (max-width: $laptop) {

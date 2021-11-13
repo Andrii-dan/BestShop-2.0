@@ -13,9 +13,9 @@
 		font-size: 36px;
 		padding: 100px 0 50px 0;
 		text-align: center;
-        @include laptop {
-            padding: 55px 0;
-        }
+		@include laptop {
+			padding: 55px 0;
+		}
 	}
 
 	&__container {
@@ -23,7 +23,7 @@
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
-	    @include laptop {
+		@include laptop {
 			flex-direction: column;
 		}
 	}
@@ -32,12 +32,12 @@
 		width: 370px;
 		height: 460px;
 		position: relative;
-        @include laptop {
+		@include laptop {
 			margin-bottom: 60px;
 		}
 		@include mobile {
 			width: 85%;
-            height: auto;
+			height: auto;
 		}
 	}
 
@@ -49,23 +49,23 @@
 		}
 	}
 
-    &__option--tablet {
-        @include mobile {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-    }
-}
-    
+	&__option--tablet {
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
 	&__option {
 		font-family: $font-raleway;
 		font-weight: bold;
 		font-size: 20px;
 		padding: 35px 0 15px 0;
-        @include mobile{
-            padding: 0;
-            padding-bottom: 15px;
-        }
+		@include mobile {
+			padding: 0;
+			padding-bottom: 15px;
+		}
 	}
 
 	&__box--basic {
@@ -82,8 +82,11 @@
 
 	&__list {
 		padding-top: 70px;
-        @include mobile {
-		padding: 20px 0 40px 0;
+		@include mobile {
+			padding: 20px 0 40px 0;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
 		}
 	}
 
@@ -137,12 +140,12 @@
 		box-shadow: 5px 10px 27px $main-color-shadow;
 		border: 1px solid $main-color;
 		border-radius: 18px;
-        @include laptop {
+		@include laptop {
 			margin-bottom: 60px;
 		}
 		@include mobile {
 			width: 95%;
-            height: auto;
+			height: auto;
 		}
 	}
 
@@ -166,4 +169,3 @@
 		background: $color-green;
 	}
 }
-
