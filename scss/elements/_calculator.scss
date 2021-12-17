@@ -1,0 +1,195 @@
+.calc {
+	padding: 80px 0;
+	background-color: $color-light-grey;
+
+	@include tablet {
+		padding: 30px 15px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	&__columns {
+		max-width: 865px;
+		margin: 50px auto 0;
+		display: flex;
+
+		@include tablet {
+			display: block;
+		}
+	}
+
+	&__form {
+		width: 50%;
+		margin-right: 20px;
+
+		@include tablet {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	&__input input,
+	&__select .select__input {
+		color: $color-grey;
+		width: 100%;
+		border-radius: 6px;
+		border: 1px solid $main-color;
+		padding: 11px 20px;
+		line-height: 1em;
+		font-size: 0.8125rem;
+		box-shadow: 0px 3px 6px $main-color-shadow;
+		margin-top: 20px;
+		background-color: $color-white;
+	}
+
+  .error {
+    display: inline-block;
+    color: $color-red;
+    margin: 10px 0 0 15px;
+    font-size: 14px;
+  }
+	&__input {
+		input {
+			&::placeholder {
+				color: $color-grey;
+			}
+		}
+	}
+
+	&__select {
+		position: relative;
+
+		.select__input {
+			position: relative;
+			height: 40px;
+			vertical-align: middle;
+			padding: 13px 20px;
+			cursor: pointer;
+
+			&::after {
+				content: '';
+				background-image: url('/assets/arrow_down.svg');
+				width: 22px;
+				height: 22px;
+				display: block;
+				position: absolute;
+				right: 14px;
+				top: 9px;
+			}
+		}
+
+		.select__dropdown {
+			display: none;
+			position: absolute;
+			z-index: 1;
+			background-color: white;
+			width: 100%;
+			border-radius: 6px;
+			border: 1px solid $color-red;
+			overflow: hidden;
+
+			li {
+				font-size: 13px;
+				padding: 10px 20px;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $color-light-grey;
+				}
+			}
+		}
+
+		&.open {
+			.select__input::after {
+				transform: rotate(180deg);
+			}
+
+			.select__dropdown {
+				display: block;
+			}
+		}
+	}
+
+	.form__checkbox {
+		display: flex;
+		padding-top: 20px;
+		.consent__text {
+			padding: 7px 0 0 5px;
+			font-family: $font-open-sans;
+			font-weight: normal;
+			font-size: 12px;
+			color: $color-grey;
+			cursor: pointer;
+		}
+		.checkbox__input {
+			appearance: none;
+			width: 24px;
+			height: 24px;
+			border: 1px solid $color-form-grey;
+			border-radius: 4px;
+			flex-shrink: 0;
+			margin-right: 7px;
+			cursor: pointer;
+		}
+
+		.checkbox__input:checked {
+			background: url(../assets/checkmark.svg) center no-repeat;
+		}
+	}
+
+	&__summary {
+		width: 50%;
+		margin-left: 20px;
+		display: flex;
+		flex-direction: column;
+
+		@include tablet {
+			width: 100%;
+			margin-left: 0;
+			margin-top: 30px;
+		}
+
+		.summary__total,
+		.list__item {
+			box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+			border-radius: 6px;
+			display: none;
+			justify-content: space-between;
+			align-items: center;
+			color: $color-white;
+			font-size: 0.875rem;
+
+			&.open {
+				display: flex;
+			}
+		}
+
+		.summary__total {
+			width: 50%;
+			align-self: flex-end;
+			margin-top: 22px;
+			padding: 8px 20px;
+			background-color: $main-color;
+
+			.total__price {
+				font-size: 1.25rem;
+				font-weight: 700;
+			}
+		}
+
+		.list__item {
+			padding: 6px 20px;
+			background-color: $color-green;
+			margin-bottom: 8px;
+
+			.item {
+				&__price {
+					font-weight: 700;
+					font-size: 1.125rem;
+				}
+			}
+		}
+	}
+}
