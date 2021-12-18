@@ -40,14 +40,13 @@
 		line-height: 1em;
 		font-size: 0.8125rem;
 		box-shadow: 0px 3px 6px $main-color-shadow;
-		margin-top: 20px;
 		background-color: $color-white;
 	}
 
   .error {
     display: inline-block;
     color: $color-red;
-    margin: 10px 0 0 15px;
+    margin: 10px 0 10px 15px;
     font-size: 14px;
   }
 	&__input {
@@ -83,6 +82,7 @@
 		.select__dropdown {
 			display: none;
 			position: absolute;
+			top: 50px;
 			z-index: 1;
 			background-color: white;
 			width: 100%;
